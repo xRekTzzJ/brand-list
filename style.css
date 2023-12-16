@@ -1,0 +1,46 @@
+@import url(./normalize.css);
+.body {
+  font-family: "TT Lakes";
+}
+.brands {
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+.brands__list {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin: 0;
+  padding: 0 0 0 16px;
+}
+.brands__title {
+  padding: 16px 16px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: #7e7e82;
+  text-transform: uppercase;
+  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
+}
+.brands__list-element {
+  list-style-type: none;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.brands__list-element:hover {
+  opacity: 0.7;
+}
+.brands__link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 16px;
+  width: 206px;
+  justify-content: space-between;
+  align-items: center;
+}
