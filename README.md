@@ -11,4 +11,4 @@
 
 1. -.
 
-[Ссылка на gh-pages](https://xrektzzj.github.io/kata-side-menu/)
+[Ссылка на gh-pages](https://xrektzzj.github.io/brand-list/)
