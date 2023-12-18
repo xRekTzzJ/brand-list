@@ -17,6 +17,7 @@
   text-align: left;
   color: #7e7e82;
   text-transform: uppercase;
+  min-height: 48px;
   background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
 }
 .swiper-slide__link {
@@ -28,6 +29,7 @@
   width: 210px;
   padding: 16px;
   align-items: center;
+  text-decoration: none;
 }
 .swiper-slide__item-next {
   width: 40px;
@@ -51,4 +53,24 @@
 }
 .swiper-pagination {
   padding-left: 9px;
+}
+@media screen and (min-width: 600px) {
+  .swiper {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 400px) {
+  .swiper-slide-next {
+    transform: translate(-100px) !important;
+  }
+}
+@media screen and (min-width: 450px) {
+  .swiper-slide-next {
+    transform: translate(-180px) !important;
+  }
+}
+@media screen and (min-width: 500px) {
+  .swiper-slide-next {
+    transform: translate(-230px) !important;
+  }
 }

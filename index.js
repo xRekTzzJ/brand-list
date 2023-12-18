@@ -19,7 +19,7 @@ items.forEach((item) => {
   const brandItem = brandsTemplate.content.cloneNode(true);
   brandsList.append(brandItem);
 });
-const swiper = new Swiper(".swiper", {
+let swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
