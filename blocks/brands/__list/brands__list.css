@@ -19,6 +19,7 @@
     grid-auto-rows: 0px;
     overflow: hidden;
     height: fit-content;
+    transition: 0.4s;
   }
 }
 @media screen and (min-width: 1120px) {

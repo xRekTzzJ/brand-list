@@ -9,6 +9,6 @@
 
 ## Планы по доработке:
 
-1. Подключить JS.
+1. -.
 
 [Ссылка на gh-pages](https://xrektzzj.github.io/kata-side-menu/)
