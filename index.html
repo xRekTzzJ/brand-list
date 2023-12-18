@@ -4,23 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <script type="module" src="./index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>brand list</title>
   </head>
   <body class="body">
     <section class="brands">
       <p class="brands__title">Ремонт техники различных брендов</p>
-      <ul class="brands__list">
-        <template class="brands__item">
-          <li class="brands__list-element">
-            <a href="#" class="brands__link">
-              <img class="brands__item-logo" alt="Логотип бренда" />
-              <img src="./img/go.svg" alt="Кнопка для перехода по ссылке." />
-            </a>
-          </li>
-        </template>
-      </ul>
+      <div class="swiper">
+        <ul class="swiper-wrapper">
+          <template class="swiper-wrapper__element">
+            <li class="swiper-slide">
+              <a href="#" class="swiper-slide__link">
+                <img class="swiper-slide__item-logo" alt="Логотип бренда" />
+                <img
+                  src="./img/go.svg"
+                  class="swiper-slide__item-next"
+                  alt="Кнопка для перехода по ссылке."
+                />
+              </a>
+            </li>
+          </template>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
   </body>
 </html>
