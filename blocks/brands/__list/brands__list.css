@@ -1,0 +1,30 @@
+.brands__list {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .brands__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 16px;
+    list-style-type: none;
+    padding: 24px;
+    padding-top: 16px;
+    padding-bottom: 0;
+    margin: 0;
+    margin-bottom: -8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 0px;
+    overflow: hidden;
+    height: fit-content;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .brands__list {
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 32px;
+    margin-bottom: 8px;
+  }
+}

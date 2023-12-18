@@ -1,76 +1,19 @@
 @import url(./normalize.css);
-.body {
-  font-family: "TT Lakes";
-}
-.brands {
-  padding: 0 0 12px;
-  margin: 0;
-  background-color: #f8f8f8;
-  overflow: hidden;
-}
-.brands__title {
-  padding: 16px 16px;
-  margin: 0;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.20000000298023224px;
-  text-align: left;
-  color: #7e7e82;
-  text-transform: uppercase;
-  min-height: 48px;
-  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
-}
-.swiper-slide__link {
-  background-color: #ffffff;
-  display: block;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 210px;
-  padding: 16px;
-  align-items: center;
-  text-decoration: none;
-}
-.swiper-slide__item-next {
-  width: 40px;
-  height: 40px;
-}
-.swiper {
-  margin: 0;
-  padding: 0;
-  transform: translate(-25px);
-  display: flex;
-  overflow: visible !important;
-}
-.swiper-pagination-bullet-active {
-  background-color: #b5b6bc !important;
-}
-.swiper-wrapper {
-  padding-bottom: 26px !important;
-}
-.swiper-slide-next {
-  transform: translate(-65px) !important;
-}
-.swiper-pagination {
-  padding-left: 9px;
-}
-@media screen and (min-width: 600px) {
-  .swiper {
-    display: none !important;
-  }
-}
-@media screen and (min-width: 400px) {
-  .swiper-slide-next {
-    transform: translate(-100px) !important;
-  }
-}
-@media screen and (min-width: 450px) {
-  .swiper-slide-next {
-    transform: translate(-180px) !important;
-  }
-}
-@media screen and (min-width: 500px) {
-  .swiper-slide-next {
-    transform: translate(-230px) !important;
-  }
-}
+@import url(./blocks/body/body.css);
+@import url(./blocks/brands/brands.css);
+@import url(./blocks/brands/__title/brands__title.css);
+@import url(./blocks/brands/__list/brands__list.css);
+@import url(./blocks/swiper-slide/__link/swiper-slide__link.css);
+@import url(/blocks/swiper-slide/__item-next/swiper-slide__item-next.css);
+@import url(./blocks/swiper/swiper.css);
+@import url(./blocks/swiper-pagination-bullet-active/swiper-pagination-bullet-active.css);
+@import url(./blocks/swiper-wrapper/swiper-wrapper.css);
+@import url(./blocks/swiper-slide-next/swiper-slide-next.css);
+@import url(./blocks/swiper-pagination/swiper-pagination.css);
+@import url(./blocks/brands/__read-more/brands__read-more.css);
+@import url(./blocks/brands/__list-element/brands__list-element.css);
+@import url(./blocks/brands/__link/brands__link.css);
+@import url(./blocks/brands/__item-next/brands__item-next.css);
+@import url(./blocks/brands/__read-more-icon/brands__read-more-icon.css);
+@import url(./blocks/brands/__list/_deployed/brands__list_deployed.css);
+@import url(./blocks/brands/__read-more-icon/_reverse/brands__read-more-icon_reverse.css);

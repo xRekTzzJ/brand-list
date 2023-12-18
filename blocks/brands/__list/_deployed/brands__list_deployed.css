@@ -1,0 +1,12 @@
+@media screen and (min-width: 767px) {
+  .brands__list_deployed {
+    grid-auto-rows: auto;
+    overflow: visible;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .brands__list_deployed {
+    margin-bottom: 45px;
+  }
+}

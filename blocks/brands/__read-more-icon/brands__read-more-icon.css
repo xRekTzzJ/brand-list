@@ -1,0 +1,7 @@
+@media screen and (min-width: 767px) {
+  .brands__read-more-icon {
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+  }
+}

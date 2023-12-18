@@ -1,0 +1,12 @@
+.swiper-slide__link {
+  background-color: #ffffff;
+  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 210px;
+  padding: 16px;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+}

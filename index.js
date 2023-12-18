@@ -1,3 +1,4 @@
+// Фотографии брендов
 const items = [
   { image: "./img/lenovo.svg" },
   { image: "./img/samsung.svg" },
@@ -11,22 +12,47 @@ const items = [
   { image: "./img/samsung.svg" },
   { image: "./img/apple.svg" },
 ];
-const brandsList = document.querySelector(".swiper-wrapper");
-const brandsTemplate = document.querySelector(".swiper-wrapper__element");
+
+const swiperWrapper = document.querySelector(".swiper-wrapper");
+const swiperElement = document.querySelector(".swiper-wrapper__element");
+const brandsList = document.querySelector(".brands__list");
+const brandsTemplate = document.querySelector(".brands__item");
+const readMoreButton = document.querySelector(".brands__read-more");
+const readMoreButtonText = document.querySelector(".brands__read-more-text");
+const readMoreButtonIc = document.querySelector(".brands__read-more-icon");
+
+// Развернуть бренды
+const deployBrandList = () => {
+  brandsList.classList.toggle("brands__list_deployed");
+  if (readMoreButtonText.textContent === "Показать все") {
+    readMoreButtonText.textContent = "Cкрыть";
+  } else {
+    readMoreButtonText.textContent = "Показать все";
+  }
+  readMoreButtonIc.classList.toggle("brands__read-more-icon_reverse");
+};
+readMoreButton.addEventListener("click", deployBrandList);
+
+//Отрендерить бренды
 items.forEach((item) => {
-  brandsTemplate.content.querySelector(".swiper-slide__item-logo").src =
+  swiperElement.content.querySelector(".swiper-slide__item-logo").src =
     item.image;
+  const brandItem = swiperElement.content.cloneNode(true);
+  swiperWrapper.append(brandItem);
+});
+items.forEach((item) => {
+  brandsTemplate.content.querySelector(".brands__item-logo").src = item.image;
   const brandItem = brandsTemplate.content.cloneNode(true);
   brandsList.append(brandItem);
 });
-let swiper = new Swiper(".swiper", {
-  // Optional parameters
+
+// Интегрировать свайпер
+const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
-
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: "true",
   },
 });
+//

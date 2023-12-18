@@ -1,0 +1,16 @@
+@media screen and (min-width: 767px) {
+  .brands__list-element {
+    background-color: #ffffff;
+    width: 224px;
+    border-radius: 10px;
+    transition: 0.2s;
+  }
+  .brands__list-element:hover {
+    opacity: 0.8;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .brands__list-element {
+    width: 240px;
+  }
+}

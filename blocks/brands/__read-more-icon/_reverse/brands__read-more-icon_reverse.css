@@ -1,0 +1,5 @@
+@media screen and (min-width: 767px) {
+  .brands__read-more-icon_reverse {
+    transform: rotate(180deg);
+  }
+}
