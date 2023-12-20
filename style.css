@@ -16,10 +16,4 @@
 @import url(./styles/brands/__read-more-icon/brands__read-more-icon.css);
 @import url(./styles/brands/__list/_deployed/brands__list_deployed.css);
 @import url(./styles/brands/__read-more-icon/_reverse/brands__read-more-icon_reverse.css);
-.swiper-pagination-bullet {
-  height: 12px !important;
-  width: 12px !important;
-}
-.swiper-pagination {
-  margin-left: 15px !important;
-}
+@import url(./styles/swiper-pagination-bullet/swiper-pagination-bullet.css);

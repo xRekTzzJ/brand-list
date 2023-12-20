@@ -11,11 +11,9 @@ const readMoreButtonIc = brandsContainer.querySelector(
 // Развернуть бренды
 const deployBrandList = () => {
   brandsList.classList.toggle("brands__list_deployed");
-  if (readMoreButtonText.textContent === "Показать все") {
-    readMoreButtonText.textContent = "Cкрыть";
-  } else {
-    readMoreButtonText.textContent = "Показать все";
-  }
+  readMoreButtonText.textContent === "Показать все"
+    ? (readMoreButtonText.textContent = "Cкрыть")
+    : (readMoreButtonText.textContent = "Показать все");
   readMoreButtonIc.classList.toggle("brands__read-more-icon_reverse");
 };
 readMoreButton.addEventListener("click", deployBrandList);

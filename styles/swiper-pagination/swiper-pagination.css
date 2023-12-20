@@ -1,3 +1,4 @@
 .swiper-pagination {
-  padding-left: 9px;
+  padding-left: 25px !important;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
 }
