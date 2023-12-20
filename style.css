@@ -1,19 +1,26 @@
 @import url(./normalize.css);
-@import url(./blocks/body/body.css);
-@import url(./blocks/brands/brands.css);
-@import url(./blocks/brands/__title/brands__title.css);
-@import url(./blocks/brands/__list/brands__list.css);
-@import url(./blocks/swiper-slide/__link/swiper-slide__link.css);
-@import url(/blocks/swiper-slide/__item-next/swiper-slide__item-next.css);
-@import url(./blocks/swiper/swiper.css);
-@import url(./blocks/swiper-pagination-bullet-active/swiper-pagination-bullet-active.css);
-@import url(./blocks/swiper-wrapper/swiper-wrapper.css);
-@import url(./blocks/swiper-slide-next/swiper-slide-next.css);
-@import url(./blocks/swiper-pagination/swiper-pagination.css);
-@import url(./blocks/brands/__read-more/brands__read-more.css);
-@import url(./blocks/brands/__list-element/brands__list-element.css);
-@import url(./blocks/brands/__link/brands__link.css);
-@import url(./blocks/brands/__item-next/brands__item-next.css);
-@import url(./blocks/brands/__read-more-icon/brands__read-more-icon.css);
-@import url(./blocks/brands/__list/_deployed/brands__list_deployed.css);
-@import url(./blocks/brands/__read-more-icon/_reverse/brands__read-more-icon_reverse.css);
+@import url(./styles/body/body.css);
+@import url(./styles/brands/brands.css);
+@import url(./styles/brands/__title/brands__title.css);
+@import url(./styles/brands/__list/brands__list.css);
+@import url(./styles/swiper-slide/__link/swiper-slide__link.css);
+@import url(/styles/swiper-slide/__item-next/swiper-slide__item-next.css);
+@import url(./styles/swiper/swiper.css);
+@import url(./styles/swiper-pagination-bullet-active/swiper-pagination-bullet-active.css);
+@import url(./styles/swiper-wrapper/swiper-wrapper.css);
+@import url(./styles/swiper-slide-next/swiper-slide-next.css);
+@import url(./styles/swiper-pagination/swiper-pagination.css);
+@import url(./styles/brands/__read-more/brands__read-more.css);
+@import url(./styles/brands/__list-element/brands__list-element.css);
+@import url(./styles/brands/__link/brands__link.css);
+@import url(./styles/brands/__item-next/brands__item-next.css);
+@import url(./styles/brands/__read-more-icon/brands__read-more-icon.css);
+@import url(./styles/brands/__list/_deployed/brands__list_deployed.css);
+@import url(./styles/brands/__read-more-icon/_reverse/brands__read-more-icon_reverse.css);
+.swiper-pagination-bullet {
+  height: 12px !important;
+  width: 12px !important;
+}
+.swiper-pagination {
+  margin-left: 15px !important;
+}

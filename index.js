@@ -1,25 +1,12 @@
-// Фотографии брендов
-const items = [
-  { image: "./img/lenovo.svg" },
-  { image: "./img/samsung.svg" },
-  { image: "./img/apple.svg" },
-  { image: "./img/VS.svg" },
-  { image: "./img/bosch.svg" },
-  { image: "./img/hp.svg" },
-  { image: "./img/acer.svg" },
-  { image: "./img/sony.svg" },
-  { image: "./img/lenovo.svg" },
-  { image: "./img/samsung.svg" },
-  { image: "./img/apple.svg" },
-];
-
-const swiperWrapper = document.querySelector(".swiper-wrapper");
-const swiperElement = document.querySelector(".swiper-wrapper__element");
-const brandsList = document.querySelector(".brands__list");
-const brandsTemplate = document.querySelector(".brands__item");
-const readMoreButton = document.querySelector(".brands__read-more");
-const readMoreButtonText = document.querySelector(".brands__read-more-text");
-const readMoreButtonIc = document.querySelector(".brands__read-more-icon");
+const brandsContainer = document.querySelector(".brands");
+const brandsList = brandsContainer.querySelector(".brands__list");
+const readMoreButton = brandsContainer.querySelector(".brands__read-more");
+const readMoreButtonText = brandsContainer.querySelector(
+  ".brands__read-more-text"
+);
+const readMoreButtonIc = brandsContainer.querySelector(
+  ".brands__read-more-icon"
+);
 
 // Развернуть бренды
 const deployBrandList = () => {
@@ -33,19 +20,6 @@ const deployBrandList = () => {
 };
 readMoreButton.addEventListener("click", deployBrandList);
 
-//Отрендерить бренды
-items.forEach((item) => {
-  swiperElement.content.querySelector(".swiper-slide__item-logo").src =
-    item.image;
-  const brandItem = swiperElement.content.cloneNode(true);
-  swiperWrapper.append(brandItem);
-});
-items.forEach((item) => {
-  brandsTemplate.content.querySelector(".brands__item-logo").src = item.image;
-  const brandItem = brandsTemplate.content.cloneNode(true);
-  brandsList.append(brandItem);
-});
-
 // Интегрировать свайпер
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
@@ -53,6 +27,46 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: "true",
+  },
+  spaceBetween: 190,
+  mousewheel: true,
+  keyboard: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    440: {
+      spaceBetween: 100,
+      slidesPerView: 2,
+    },
+    500: {
+      spaceBetween: 30,
+      slidesPerView: 2,
+    },
+    580: {
+      spaceBetween: 0,
+      slidesPerView: 2,
+    },
+    600: {
+      spaceBetween: 200,
+      slidesPerView: 3,
+    },
+    640: {
+      spaceBetween: 130,
+      slidesPerView: 3,
+    },
+    675: {
+      spaceBetween: 100,
+      slidesPerView: 3,
+    },
+    720: {
+      spaceBetween: 50,
+      slidesPerView: 3,
+    },
+    760: {
+      spaceBetween: 0,
+      slidesPerView: 3,
+    },
   },
 });
 //
