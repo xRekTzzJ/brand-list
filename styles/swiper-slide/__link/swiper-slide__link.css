@@ -1,6 +1,5 @@
 .swiper-slide__link {
   background-color: #ffffff;
-  display: block;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,4 +8,5 @@
   align-items: center;
   text-decoration: none;
   border-radius: 10px;
+  height: 40px !important;
 }

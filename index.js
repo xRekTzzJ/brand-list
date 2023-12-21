@@ -26,45 +26,10 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
     clickable: "true",
   },
-  spaceBetween: 190,
   mousewheel: true,
   keyboard: true,
-  breakpoints: {
-    0: {
-      slidesPerView: 2,
-    },
-    440: {
-      spaceBetween: 100,
-      slidesPerView: 2,
-    },
-    500: {
-      spaceBetween: 30,
-      slidesPerView: 2,
-    },
-    580: {
-      spaceBetween: 0,
-      slidesPerView: 2,
-    },
-    600: {
-      spaceBetween: 200,
-      slidesPerView: 3,
-    },
-    640: {
-      spaceBetween: 130,
-      slidesPerView: 3,
-    },
-    675: {
-      spaceBetween: 100,
-      slidesPerView: 3,
-    },
-    720: {
-      spaceBetween: 50,
-      slidesPerView: 3,
-    },
-    760: {
-      spaceBetween: 0,
-      slidesPerView: 3,
-    },
-  },
+
+  slidesPerView: "auto",
+  spaceBetween: 16,
 });
 //
